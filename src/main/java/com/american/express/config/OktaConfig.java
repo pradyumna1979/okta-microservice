@@ -18,9 +18,9 @@ import java.net.http.HttpRequest;
 public class OktaConfig {
     @Bean
     public SecurityFilterChain securityWebFilterChain(HttpSecurity httpSecurity) throws Exception {
-       return httpSecurity.
-                cors().disable()
-                .csrf().disable()
+       return httpSecurity
+                //cors().disable()
+                //.csrf().disable()
                 .authorizeHttpRequests().requestMatchers("/").permitAll()
                 .and()
                 .authorizeHttpRequests().anyRequest().authenticated()
