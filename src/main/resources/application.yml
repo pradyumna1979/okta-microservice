@@ -1,0 +1,12 @@
+server:
+  port: 8081
+okta:
+  oauth2:
+    issuer: https://dev-34208239.okta.com/oauth2/default
+    client-id: 0oa975jowqlY2Z5e35d7
+    client-secret: Tl7sViRV_5JOOaCPEXartAUuRy40dqv_v5niAwFE
+    redirect-uri: /authorization-code/callback
+    scopes:
+      - profile
+      - email
+      - openid
